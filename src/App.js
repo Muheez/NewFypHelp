@@ -10,6 +10,10 @@ class App extends Component {
           <div class="search-engine">
             <div class="search-icon"></div>
             <input type="text" placeholder="Search disease" class="input-field" />
+            <ul class="search-results">
+              <li class="result"><a href="#">Gastroesophageal reflux disease</a></li>
+              <li class="result"><a href="#">Gastroenteritis</a></li>
+            </ul>
           </div>
         </div>
       </div>
