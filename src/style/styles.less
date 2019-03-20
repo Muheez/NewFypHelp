@@ -33,9 +33,11 @@
     position: relative;
     background-color: white;
     border-radius: 8px;
-    width: 32vw;
+    width: 38vw;
     padding: 16px;
     box-shadow: 0 1px 18px rgba(0, 0, 0, .1);
+    will-change: height;
+    transition: all 0.318s ease-out;
 
     .input-field {
         position: relative;
@@ -67,6 +69,10 @@
     .search-results {
         position: relative;
         margin-top: 16px;
+        max-height: 150px;
+        overflow: auto;
+        transition: all 0.318s ease-out;
+        display: none;
 
         .result {
             position: relative;
@@ -77,5 +83,11 @@
         .result:hover {
             background-color: #f3f6f9;
         }
+    }
+}
+
+.search-engine.active {
+    .search-results {
+        display: block;
     }
 }
