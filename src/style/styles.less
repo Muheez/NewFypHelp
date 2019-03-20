@@ -7,3 +7,60 @@
     display: "block";
     clear: both;
 }
+
+// main styles
+
+.main-container {
+    position: relative;
+    top: 24vh;
+    display: table;
+    margin: auto;
+}
+
+.app-header {
+    position: relative;
+    font-size: 2.25em;
+    color: #2b92e4;
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    span {
+        color: #f8b5c1;
+    }
+}
+
+.search-engine {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    width: 32vw;
+    padding: 16px;
+    box-shadow: 0 1px 18px rgba(0, 0, 0, .1);
+
+    .input-field {
+        position: relative;
+        padding: 0.667em;
+        font-size: 1em;
+        outline: none;
+        border: transparent;
+        border-radius: 5px;
+        background-color: rgba(248, 208, 210, .2);
+        color: rgb(100, 100, 100);
+        width: 100%;
+        padding-left: 32px;
+    }
+
+    .search-icon {
+        position: absolute;
+        top: 26px;
+        left: 24px;
+        width: 18px;
+        height: 18px;
+        background: url("../icons/search.svg") center no-repeat;
+        background-size: cover;
+    }
+
+    .input-field::placeholder {
+        color: #f8b5c1;
+    }
+}

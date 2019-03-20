@@ -5,7 +5,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <p>Hello FYP</p>
+        <div class="main-container">
+          <h3 class="app-header">FYP<span>help.</span></h3>
+          <div class="search-engine">
+            <div class="search-icon"></div>
+            <input type="text" placeholder="Search disease" class="input-field" />
+          </div>
+        </div>
       </div>
     );
   }
